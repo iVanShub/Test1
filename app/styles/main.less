@@ -1,0 +1,71 @@
+ 
+@import 'bower_components/components-bootstrap/less/bootstrap.less';
+@icon-font-path: "../../bower_components/components-bootstrap/fonts/";
+
+.wrapper {
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+.rb {
+    border: 2px solid red;
+}
+.err {
+    display: none;
+}
+.groups {
+    width: 20%;
+    float: left;
+    .form-control {
+        display: none;
+        width: 80%;
+    }
+}
+.students {
+    .col1, .col2, .col3, .col4 {
+        display: inline-block;
+    }
+    
+    .col1 {
+        width: 40%;
+    }
+    .col2 {
+        width: 8%;
+    }
+    .col3 {
+        width: 40%;
+    }
+
+    .save {
+        display: block;
+        position: absolute;
+        left: 40%;
+        background: lightblue;
+        z-index: 10;
+        display: none;
+    }
+
+    width: 79%;
+    float: right;
+    .btn-group {
+        width: 100%;
+        .btn-danger {
+            visibility: hidden;
+        }    
+    }
+    .btn-group:hover {
+        .btn-danger {
+            visibility: visible;
+        }
+    }
+    
+    .controls {
+        display: none;
+        .form-control {
+            display: none;
+            width: 80%;
+        }    
+    }
+    
+}

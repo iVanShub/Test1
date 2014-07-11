@@ -1,0 +1,11 @@
+
+
+  <input type="text" readonly="readonly" class="col1 btn btn-default btn-lg fio" value="<%= fullname %>">
+  <span class=" btn btn-default save btn-lg"><span class="glyphicon glyphicon-save"></span></span>
+  <span class="col2 btn btn-lg btn-default disabled">
+    <span class="glyphicon glyphicon-<% if (session) { %>ok<% } else {%>remove<%}%>-circle"></span>
+  </span>
+  <span class="col3 btn btn-lg btn-default disabled"><small><%= ndate %></small></span>
+  <span class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-remove"></span></span>
+  
+
