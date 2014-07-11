@@ -129,7 +129,6 @@ define([
                         this.collection.add(newGroup);
                         this.collection.sync('create',newGroup, {success: function(data){
                             newGroup.set('_id',data._id);
-                            newGroup.save();
                         }});
                         inp.val('');
                     }
