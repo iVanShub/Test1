@@ -127,7 +127,10 @@ define([
                         newGroup = new Group();
                         newGroup.set({name: inp.val()});
                         this.collection.add(newGroup);
-                        this.collection.sync('create',newGroup);
+                        this.collection.sync('create',newGroup, {success: function(data){
+                            newGroup.set('_id',data._id);
+                            newGroup.save();
+                        }});
                         inp.val('');
                     }
                     else {
